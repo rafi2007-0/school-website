@@ -84,8 +84,58 @@
     </section>
 
     <section class="section" id="teachers">
-      <h2>শিক্ষক ও কর্মচারীবৃন্দ</h2>
-      <p>প্রধান শিক্ষক ও অন্যান্য শিক্ষকবৃন্দের নাম এখানে থাকবে।</p>
+      <h2>শিক্ষক ও স্টাফ</h2>
+
+<button onclick="toggleTeachers()" style="padding: 10px 20px; background-color: #008CBA; color: white; border: none; border-radius: 5px; cursor: pointer;">
+  👩‍🏫 শিক্ষক তালিকা
+</button>
+
+<div id="teacherList" style="display: none; margin-top: 20px;">
+  <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse;">
+    <thead style="background-color: #f0f0f0;">
+      <tr>
+        <th>নাম</th>
+        <th>পদবি</th>
+        <th>বিষয়</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>মোঃ আঃ রাজ্জাক</td>
+        <td>প্রধান শিক্ষক</td>
+        <td>*</td>
+      </tr>
+      <tr>
+        <td>মোঃ মিজানুর রহমান</td>
+        <td>সহকারী প্রধান শিক্ষক</td>
+        <td>গণিত</td>
+      </tr>
+      <tr>
+        <td>মোসাম্মাদ ছালমা বেগম</td>
+        <td>সহকারী শিক্ষক</td>
+        <td>সমাজ বিজ্ঞান</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script>
+  function toggleTeachers() {
+    var list = document.getElementById("teacherList");
+    if (list.style.display === "none") {
+      list.style.display = "block";
+    } else {
+      list.style.display = "none";
+    }
+  }
+</script>
+<h2>ছবির গ্যালারি</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="images/pic1.jpg" style="width: 30%; border-radius: 10px;">
+  <img src="images/pic2.jpg" style="width: 30%; border-radius: 10px;">
+  <img src="images/pic3.jpg" style="width: 30%; border-radius: 10px;">
+</div>
+
+	 
     </section>
 
     <section class="section" id="notice">
@@ -119,6 +169,8 @@
 
   <footer>
     &copy; ২০২৫ ছোটবগী কমডেকা মাধ্যমিক বালিকা বিদ্যালয়. সর্বস্বত্ব সংরক্ষিত।
+	 <footer>
+    &copy; Developer By Rafi
   </footer>
 </body>
 </html>
